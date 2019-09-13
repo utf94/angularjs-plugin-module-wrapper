@@ -1,0 +1,73 @@
+{
+  "dataTables": [
+
+    {
+      "serie": true,
+      "files": ["js/plugins/dataTables/jquery.dataTables.min.js", "css/plugins/dataTables/datatables.min.css"]
+    },
+    {
+      "serie": true,
+      "name": "datatables",
+      "files": ["js/plugins/dataTables/angular-datatables.min.js"]
+    }, {
+      "serie": true,
+      "files": ["https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js", "https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"]
+    }, {
+      "serie": true,
+      "name": "datatables.columnfilter",
+      "files": ["js/plugins/dataTables/vendor/datatables-columnfilter/js/dataTables.columnFilter.js",
+        "js/plugins/dataTables/plugins/columnfilter/angular-datatables.columnfilter.min.js"
+      ]
+    }, {
+      "serie": true,
+      "files": [
+        "https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css",
+        "https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"
+      ]
+    }, {
+      "serie": true,
+      "name": "datatables.buttons",
+      "files": [
+        "https://cdn.datatables.net/select/1.2.2/css/select.dataTables.min.css",
+        "https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js",
+        "js/plugins/datatables/plugins/bootstrap-buttons/angular-datatables.bootstrap.js",
+        "js/plugins/datatables/plugins/bootstrap-buttons/buttons.bootstrap.min.css",
+        "https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js",
+        "https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js",
+        "https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js",
+        "js/plugins/dataTables/angular-datatables.buttons.min.js"
+      ]
+    }
+  ],
+  "GaugeChart": [{
+    "serie": true,
+    "files": ["js/plugins/gauge/gauge.js"]
+  }, {
+    "serie": true,
+    "name": "gaugeChart",
+    "files": ["js/modules/gauge.js"]
+  }],
+  "KnobChart": [{
+    "serie": true,
+    "files": ["js/plugins/jquery-knob/jquery.knob.min.js"]
+  }, {
+    "serie": true,
+    "name": "knobChart",
+    "files": ["js/modules/knob.js"]
+  }],
+  "progressChart": [{
+    "serie": true,
+    "name": "progressChart",
+    "files": ["js/modules/progress.js"]
+  }],
+  "select": [{
+    "name": "angular.filter",
+    "files": ["https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.2/angular-filter.js"]
+  }, {
+    "name": "ui.select",
+    "files": ["js/plugins/ui-select/select.min.js", "css/plugins/ui-select/select.min.css"]
+  }]
+}

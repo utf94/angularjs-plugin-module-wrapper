@@ -1,0 +1,61 @@
+{
+  "type": "window",
+  "renderMode": "append",
+  "placeholder": "body",
+  "url": "/abeer",
+  "views": [{
+    "template": "tables/data_tables",
+    "controller": "datatablesCtrl",
+    "ajax": true,
+    "api": "/json/table.json",
+    "controlSet": {
+      "submitUrl": "/api/abeer"
+    }
+  }]
+}
+
+[
+  ["d3test", {
+    "abstract": true,
+    "url": "/",
+    "templateUrl": "views/common/content.html",
+    "data": {
+      "plugins": ["GaugeChart"]
+    }
+  }],
+  ["d3test.land", {
+    "url": "d3",
+    "templateUrl": "views/superior/Marketting/d3test.html",
+    "dataLoaders": [{
+        "serie": true,
+        "name": "chart.js",
+        "files": ["https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js", "js/plugins/chartJs/angular-chart.min.js"]
+      },
+      {
+        "name": "angles",
+        "files": ["js/plugins/chartJs/angles.js"]
+      }, {
+        "files": ["js/plugins/sparkline/jquery.sparkline.min.js"]
+      }, {
+        "serie": true,
+        "files": ["css/plugins/c3/c3.min.css", "js/plugins/d3/d3.min.js", "js/plugins/c3/c3.min.js"]
+      },
+      {
+        "serie": true,
+        "name": "gridshore.c3js.chart",
+        "files": ["js/plugins/c3/c3-angular.min.js"]
+      }
+    ],
+    "data": {
+      "pageTitle": "D3 Test",
+      "requireLogin": false,
+      "settings": {
+        "logout": false,
+        "leftNavigation": false,
+        "topNavigation": false,
+        "pageId": "page-wrapper-2"
+      },
+      "plugins": ["Gaugechart", "progressChart"]
+    }
+  }]
+  ]

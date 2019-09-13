@@ -1,0 +1,25 @@
+<!-- Wrapper-->
+<div id="wrapper">
+    <!-- Navigation -->
+    <div ng-controller="navcontrol as nv" ng-if="$user.settings.leftNavigation" ng-include="getInclude()">
+    </div>
+    <!-- <div ng-if="$user.settings.leftNavigation" ng-include="'views/common/studentNavigation.html'"></div> -->
+    <!-- Page wraper -->
+    <!-- ng-class with current state name give you the ability to extended customization your view -->
+    <div ng-attr-id="{{$user.settings.pageId || $state.current.data.settings.pageId || 'page-wrapper' }}" class="gray-bg {{$state.current.name}}">
+      <!-- Page wrapper -->
+      <div ng-if="$user.settings.topNavigation" ng-include="'views/common/topnavbar.html'"></div>
+      <!-- Main view  -->
+      <div ng-if="$state.current.templateUrl">
+        <!--       <div ng-include="$state.current.templateUrl">
+        </div>-->
+        <div ui-view></div>
+      </div>
+      <!-- Footer -->
+      <!--     <div ng-include="'views/common/footer.html'"></div> -->
+    </div>
+    <!-- End page wrapper-->
+    <!-- Right Sidebar -->
+    <!--   <div ng-include="'views/common/right_sidebar.html'"></div> -->
+  </div>
+  <!-- End wrapper-->

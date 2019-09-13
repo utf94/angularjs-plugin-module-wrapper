@@ -1,0 +1,16 @@
+{
+  "routes": [
+    [
+      "Login",
+      {
+        "url": "",
+        "templateUrl": "views/login.html",
+        "data": {
+          "pageTitle": "Base Inspinia Login",
+          "specialClass": "gray-bg"
+        }
+      }
+    ]
+
+  ]
+}

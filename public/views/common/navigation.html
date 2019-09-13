@@ -1,0 +1,35 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul side-navigation class="nav metismenu" id="side-menu">
+      <li class="nav-header">
+        <div class="profile-element" uib-dropdown>
+          <img alt="image" class="img-circle" src="img/logo.png" style="width: 130px;" />
+          <a uib-dropdown-toggle href>
+        <span class="clear">
+         <span class="block m-t-xs">
+                <strong class="font-bold">Superior BI</strong>
+         </span>
+          <span class="text-muted text-xs block">Digital Admissions <b class="caret"></b></span>
+        </span>
+       </a>
+        </div>
+      </li>
+      <!-- <li class="nav-header" ng-repeat="permission in $user.permissions">
+        <div class="logo-element">
+          {{$user.permissions[0].level}}
+        </div>
+      </li> -->
+      <li class="active" ng-repeat="permission in $user.permissions">
+        <a href="">
+          <i class="fa fa-th-large"></i> <span class="nav-label">{{ permission.level }}</span> <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+          <li ng-repeat="state in permission.data" ui-sref-active="active"><a ui-sref="{{state.key}}">{{state.name}} <span ng-if="state.state && state.state.length" class="fa arrow"></span></a>
+            <ul class="nav nav-third-level" ng-if="state.state && state.state.length">
+              <li ng-repeat="subState in state.state" ui-sref-active="active"><a ui-sref="{{subState.key}}">{{subState.name}} </a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

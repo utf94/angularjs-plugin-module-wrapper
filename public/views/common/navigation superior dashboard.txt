@@ -1,0 +1,34 @@
+      <li class="active">
+        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">{{ 'DAC' | translate }}</span> <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+          <li ui-sref-active="active"><a ui-sref="executive.land">General {{ 'DASHBOARD' | translate }} </a></li>
+          <li ui-sref-active="active"><a ui-sref="marketting.land">Marketing {{ 'DASHBOARD' | translate }} </a></li>
+          <li ui-sref-active="active"><a ui-sref="academics.land">Academics {{ 'DASHBOARD' | translate }} </a>
+          </li>
+          <li ui-sref-active="active"><a ui-sref="academics.fee">Fee {{ 'DASHBOARD' | translate }} </a>
+          </li>
+          <li ui-sref-active="active"><a ui-sref="academics-detailed.land">Admissions {{ 'DASHBOARD' | translate }} </a>
+            <ul class="nav nav-third-level">
+              <li ui-sref-active="active"><a ui-sref="academics-detailed.officerOverview">Officers Overview </a></li>
+              <li ui-sref-active="active"><a ui-sref="academics-detailed.signups">Signups </a>
+              </li>
+              <li ui-sref-active="active"><a ui-sref="academics-detailed.prospectusNotSold">Prospectus Not Sold </a>
+              </li>
+              <li ui-sref-active="active"><a ui-sref="academics-detailed.prospectusSoldFormNotSubmitted">Prospectus Sold Form Not Submitted</a>
+              </li>
+              <li ui-sref-active="active"><a ui-sref="academics-detailed.formSubmitted">Form Submitted</a>
+              </li>
+            </ul>
+          </li>
+          <li ui-sref-active="active"><a ui-sref="refral.land">Lead the Leaders {{ 'DASHBOARD' | translate }} <span class="fa arrow"></span></a>
+            <ul class="nav nav-third-level">
+              <li ui-sref-active="active"><a ui-sref="refral.overview">Overview </a></li>
+              <li ui-sref-active="active"><a ui-sref="refral.employee">Employee wise </a></li>
+              <li ui-sref-active="active"><a ui-sref="refral.degreeVise">Employee wrt Degree </a>
+              </li>
+              <li ui-sref-active="active"><a ui-sref="refral.detailed">Detailed References</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>

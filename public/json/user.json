@@ -1,0 +1,10 @@
+{
+  "_id": "123",
+  "name": "Muhammad Abeer",
+  "paths": [
+    "login", "register"
+  ],
+  "role": "teacher",
+  "email": "abeersaqib@gmail.com",
+  "picture": "/abeer.jpg"
+}

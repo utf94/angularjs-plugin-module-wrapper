@@ -1,0 +1,12 @@
+<div class="bi_progress_progress">
+  <div ng-repeat-start="step in steps" ng-class="{'bi_progress_done': step.done,'bi_progress_active': step.active}" class="bi_progress_circle">
+    <span class="bi_progress_label">{{step.text}}</span>
+    <span class="bi_progress_title">{{step.progress}} 
+    </span>
+    <div class="bi_progress_info" style="position: absolute;margin-left:-2.5%;">
+      <h2>{{step.data.title}}</h2>
+      <h1><b>{{step.data.title}}</b></h1>
+    </div>
+  </div>
+  <span ng-hide="$index === steps.length - 1" ng-repeat-end class="bi_progress_bar" ng-class="{'bi_progress_done': step.done,'bi_progress_active': step.active}" ng-style="{ 'width' : (100/steps.length)+''+'%' }"></span>
+</div>
